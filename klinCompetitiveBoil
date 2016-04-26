@@ -8,10 +8,22 @@ public class Plate{
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());
         for(int t = 0; t < testCases; t++){
-            // process test cases
+            int[] abArr = klinUtil.sArrToIArr(in.nextLine().split(\" \"));
+            //insert code
         }
     }
     
+}
+
+
+class klinUtil {
+    public static int[] sArrToIArr(String[] sArr){
+        int[] iArr = new int[sArr.length];
+        for(int i = 0; i < sArr.length; i++){
+            iArr[i] = Integer.parseInt(sArr[i]);
+        }
+        return iArr;
+    }
 }
 "
 
