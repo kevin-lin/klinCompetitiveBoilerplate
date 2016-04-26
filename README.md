@@ -1,10 +1,13 @@
 klinCompetitiveBoilerplate
 ======
-##Boilerplate for starting competitve programming applications
+#####Boilerplate for starting competitve programming applications
+
+##Installation
+
 
 ###Example usage
 ```
-klinCompetitiveBoilerplate Fibonacci
+klinCompetitiveBoil Fibonacci
 ```
 generates a Fibonacci.java file with boilerplate code
 

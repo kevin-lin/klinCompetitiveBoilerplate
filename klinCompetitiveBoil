@@ -1,0 +1,19 @@
+#!/bin/bash
+
+JAVA_PLATE="import java.util.*;
+
+public class Plate{
+
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int testCases = Integer.parseInt(in.nextLine());
+        for(int t = 0; t < testCases; t++){
+            // process test cases
+        }
+    }
+    
+}
+"
+
+echo "$JAVA_PLATE" | sed s/Plate/$1/ > $1.java
+echo "boilerplate for $1.java has been created"
