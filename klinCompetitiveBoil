@@ -27,5 +27,10 @@ class klinUtil {
 }
 "
 
-echo "$JAVA_PLATE" | sed s/Plate/$1/ > $1.java
-echo "boilerplate for $1.java has been created"
+if [ -z "$1" ]
+then
+    echo "usage: klinCompetitiveBoil Classname"
+else
+    echo "$JAVA_PLATE" | sed s/Plate/$1/ > $1.java
+    echo "boilerplate for $1.java has been created"
+fi
